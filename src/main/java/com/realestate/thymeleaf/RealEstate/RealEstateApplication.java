@@ -38,7 +38,7 @@ public class RealEstateApplication {
 			propertyDataStorage.extractData(resultSet);
 
 			// Execute a SQL query to select all data from the "users" table
-			ResultSet resultSet2 = statement.executeQuery("SELECT * FROM users");
+			ResultSet resultSet2 = statement.executeQuery("SELECT * FROM user_data");
 
 			// Extract data from the ResultSet and store it in the DataStorage object
 			userDataStorage.extractData(resultSet2);

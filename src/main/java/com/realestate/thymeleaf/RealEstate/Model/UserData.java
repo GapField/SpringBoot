@@ -1,11 +1,9 @@
 package com.realestate.thymeleaf.RealEstate.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name="user_data")
 public class UserData {
 
  @Id
@@ -21,7 +19,7 @@ public class UserData {
  // Constructor
 
 
- public UserData(Long id, String firstName,String lastName, String email, String phoneNumber, String password, String role) {
+ public UserData(Long id, String firstName, String lastName, String email, String phoneNumber, String password, String role) {
   this.id = id;
   this.firstName = firstName;
   this.lastName = lastName;
