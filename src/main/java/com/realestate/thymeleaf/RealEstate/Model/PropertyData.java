@@ -1,4 +1,4 @@
-package com.realestate.thymeleaf.RealEstate.DataStorage;
+package com.realestate.thymeleaf.RealEstate.Model;
 public class PropertyData {
 
     // attributes of table properties

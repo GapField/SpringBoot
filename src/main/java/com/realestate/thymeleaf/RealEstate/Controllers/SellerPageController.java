@@ -1,9 +1,9 @@
 package com.realestate.thymeleaf.RealEstate.Controllers;
 
 
-import com.realestate.thymeleaf.RealEstate.DataStorage.PropertyData;
-import com.realestate.thymeleaf.RealEstate.DataStorage.PropertyDataStorage;
+import com.realestate.thymeleaf.RealEstate.Model.PropertyData;
 import com.google.gson.Gson;
+import com.realestate.thymeleaf.RealEstate.Model.PropertyDataStorage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,7 +13,6 @@ import java.util.List;
 
 @Controller
 public class SellerPageController {
-
     private final PropertyDataStorage propertyDataStorage;
 
     @Autowired
@@ -29,4 +28,6 @@ public class SellerPageController {
         model.addAttribute("jsonProperties", jsonProperties);
         return "sellerPage"; // returns the name of the view template (properties.html)
     }
+
+
 }

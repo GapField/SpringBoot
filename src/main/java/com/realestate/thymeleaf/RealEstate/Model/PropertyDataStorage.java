@@ -1,4 +1,4 @@
-package com.realestate.thymeleaf.RealEstate.DataStorage;
+package com.realestate.thymeleaf.RealEstate.Model;
 import org.springframework.stereotype.Component;
 
 import java.sql.ResultSet;
@@ -87,6 +87,6 @@ public class PropertyDataStorage {
     public ArrayList<String> getCities() {
         return cities;
     }
-    */
 
+*/
 }

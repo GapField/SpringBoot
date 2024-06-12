@@ -1,4 +1,4 @@
-package com.realestate.thymeleaf.RealEstate.DataStorage;
+package com.realestate.thymeleaf.RealEstate.Model;
 import org.springframework.stereotype.Component;
 
 import java.sql.ResultSet;
@@ -10,7 +10,7 @@ public class UserDataStorage {
     private List<UserData> users = new ArrayList<UserData>();
 
     // ArrayLists to store IDs and addresses extracted from the ResultSet
-    private ArrayList<String> ids = new ArrayList<>();
+    private ArrayList<Long> ids = new ArrayList<>();
     private ArrayList<String> firstNames = new ArrayList<>();
     private ArrayList<String> lastNames = new ArrayList<>();
     private ArrayList<String> emails = new ArrayList<>();
@@ -24,7 +24,7 @@ public class UserDataStorage {
         try {
             // Loop through the ResultSet
             while (resultSet.next()) {
-                String id = resultSet.getString("UserID");
+                Long id = resultSet.getLong("UserID");
                 String firstName = resultSet.getString("FirstName");
                 String lastName = resultSet.getString("LastName");
                 String email = resultSet.getString("Email");
@@ -53,3 +53,4 @@ public class UserDataStorage {
     }
 
 }
+
