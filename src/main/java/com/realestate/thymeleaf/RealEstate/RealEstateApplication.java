@@ -23,8 +23,10 @@ public class RealEstateApplication {
 		SpringApplication.run(RealEstateApplication.class, args);
 	}
 
+	/*
 	@PostConstruct
 	public void init() {
+
 		try {
 			// Establish a connection to the MySQL database
 			Connection connection = DriverManager.getConnection("jdbc:mysql://descus.de:3306/immobilial", "immo", "Wt7?03(RLG#rF6]JzL}dk9~1y*H48N@I");
@@ -48,5 +50,8 @@ public class RealEstateApplication {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		 */
 	}
-}
+
+

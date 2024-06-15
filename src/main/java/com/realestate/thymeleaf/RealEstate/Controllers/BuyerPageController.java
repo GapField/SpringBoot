@@ -27,6 +27,6 @@ public class BuyerPageController {
         Gson gson = new Gson();
         String jsonProperties = gson.toJson(properties);
         model.addAttribute("jsonProperties", jsonProperties);
-        return "buyerPage";
+        return "BuyerPage";
     }
 }

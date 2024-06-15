@@ -49,7 +49,7 @@ private final UserRepository userRepository;
         return "login"; // returns the name of the view template (users.html)
     }
 
-    @PostMapping("/login")
+    @PostMapping("/login1")
     public String saveUser(@ModelAttribute UserData user) {
         userRepository.save(user);
         return "redirect:/success";  // Redirect to a success page or the desired page
