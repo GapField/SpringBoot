@@ -63,21 +63,20 @@
         <div aria-hidden="true" aria-labelledby="addApartment" class="add-apartment modal fade" id="addApartment"
              tabindex="-1">
             <div class="modal-dialog modal-dialog-centered contact-apartment">
-                <div class="modal-content text-center d-flex align-items-center justify-content-center">
-                    <div class="mb-3 modal-header container d-flex justify-content-between ">
-                        <h5 class="modal-title contact-title col-11">Add new apartment</h5>
-                        <!-- Close button -->
-                        <button type="button" class="btn-close col-1" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                    </div>
-                    <form th:action="@{/sellerPage}" th:object="${propertyData}" method="post">
+                <form th:action="@{/sellerPage}" th:object="${propertyData}" method="post">
+                    <div class="modal-content text-center d-flex align-items-center justify-content-center">
+                        <div class="modal-header container d-flex justify-content-between ">
+                            <h5 class="modal-title contact-title col-11">Add new apartment</h5>
+                            <!-- Close button -->
+                            <button type="button" class="btn-close col-1" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                        </div>
                         <div class="modal-body">
                             <div class="row">
-                                <form class="col-md-6">
-                                    <div class="form-group">
+                                <form>
+                                    <div class="form-group col-md-6 ">
                                         <label class="p-2">First Name*</label>
-                                        <input class="form-control" id="addFirstName" placeholder="First Name"
-                                               type="text">
+                                        <input class="form-control" id="addFirstName" placeholder="First Name" type="text">
                                     </div>
                                 </form>
                                 <form class="col-md-6">
@@ -160,8 +159,8 @@
                                     data-bs-dismiss="modal">Add Apartment
                             </button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
