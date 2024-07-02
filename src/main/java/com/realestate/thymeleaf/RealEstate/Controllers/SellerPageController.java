@@ -33,8 +33,8 @@ public class SellerPageController {
         String jsonProperties = gson.toJson(properties);
         model.addAttribute("jsonProperties",jsonProperties);
         return "sellerPage";
-    } */
-
+    }
+*/
     @GetMapping("/sellerPage")
     public String showSellerForm(Model model) {
         model.addAttribute("propertyData", new PropertyData());  // Initialize an empty PropertyData object for the form
